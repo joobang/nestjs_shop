@@ -1,9 +1,8 @@
 import { Controller, Get, Param, Req } from '@nestjs/common';
 
-@Controller('search')
-export class SearchController {
-
-    @Get('/channel/:id')
+@Controller('channel')
+export class ChannelController {
+    @Get(':id')
     getChannelInfo(@Param('id') channelId: string){
         return channelId;
     }
