@@ -15,4 +15,9 @@ describe('SearchController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  it('should return the channel id', () => {
+    const channelId = 'abc';
+    expect(controller.getChannelInfo(channelId)).toBe(channelId);
+  });
 });
