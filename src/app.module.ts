@@ -7,9 +7,10 @@ import { SearchModule } from './search/search.module';
 import { ChannelController } from './channel/channel.controller';
 import { ChannelService } from './channel/channel.service';
 import { ChannelModule } from './channel/channel.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [SearchModule, ChannelModule],
+  imports: [SearchModule, ChannelModule, AuthModule],
   controllers: [AppController, SearchController, ChannelController],
   providers: [AppService, SearchService, ChannelService],
 })
